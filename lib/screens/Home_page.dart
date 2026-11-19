@@ -62,21 +62,22 @@ class HomePage extends StatelessWidget {
                 SizedBox(height: 20),
 
                 ProductList(
-                  image_in_List: Image.asset("assets/mooz.png", height: 90),
+                  image_in_List: Image.asset("assets/Apple.png", height: 90),
                 ),
                 SizedBox(height: 20),
                 SectionHeader(text: "Best Selling"),
                 SizedBox(height: 20),
-                ProductList(
-                  image_in_List: Image.asset(
-                    "assets/vegetable.png",
-                    height: 90,
+                ProductList(image_in_List: Image.asset("assets/vegetable.png",  height: 90,
                   ),
                 ),
                 SizedBox(height: 20),
                 SectionHeader(text: "Groceries"),
                 SizedBox(height: 20),
                 catecorylist(),
+                 SizedBox(height: 20),
+                 ProductList(
+                  image_in_List: Image.asset("assets/beaf.png", height: 90),
+                ),
               ],
             ),
           ),
