@@ -62,7 +62,8 @@ class Login_Page extends StatelessWidget {
               ),
               input_email(
                 hintText: "Email",
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: Icon(Icons.email),
+                suffixIcon:null
               ),
 
 
@@ -70,7 +71,7 @@ class Login_Page extends StatelessWidget {
 
 
 
-              
+
 
               SizedBox(height: 15),
 
@@ -83,17 +84,11 @@ class Login_Page extends StatelessWidget {
                 ],
               ),
 
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: "Password",
-                  prefixIcon: Icon(Icons.lock),
-                  suffixIcon: Icon(Icons.visibility_off),
-
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              input_email(
+                hintText: "password",
+                prefixIcon: Icon(Icons.password),
+                suffixIcon: Icon(Icons.remove_red_eye),
+                
               ),
 
               Row(

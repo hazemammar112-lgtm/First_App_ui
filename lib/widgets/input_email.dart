@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class input_email extends StatelessWidget {
-  const input_email({super.key, required this.hintText, required this.prefixIcon});
+  const input_email({super.key, required this.hintText, required this.prefixIcon, required this.suffixIcon});
   final String hintText;
   final Widget prefixIcon;
+  final Widget? suffixIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -11,6 +12,7 @@ class input_email extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
       ),
     );

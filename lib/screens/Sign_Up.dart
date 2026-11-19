@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frist_app_ui/screens/Login_bage.dart';
+import 'package:frist_app_ui/widgets/input_email.dart';
 
 class Sign_Up extends StatelessWidget {
   const Sign_Up({super.key});
@@ -90,18 +91,12 @@ class Sign_Up extends StatelessWidget {
                 ],
               ),
 
-              TextField(
-                obscureText: true,
-                decoration: InputDecoration(
-                  hintText: "Password",
-                  prefixIcon: Icon(Icons.lock),
-                  suffixIcon: Icon(Icons.visibility_off),
+              input_email(
+               hintText:"password" ,
+               prefixIcon: Icon(Icons.password_outlined),
+               suffixIcon: Icon(Icons.lock)
+               ),
 
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
 
               Column(
                 children: [
