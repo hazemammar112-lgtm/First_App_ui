@@ -3,8 +3,8 @@ import 'package:frist_app_ui/screens/signup_page.dart';
 import 'package:frist_app_ui/widgets/text_label.dart';
 import 'package:frist_app_ui/widgets/input_email.dart';
 
-class Login_Page extends StatelessWidget {
-  const Login_Page({super.key});
+class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class Login_Page extends StatelessWidget {
               ),
               SizedBox(height: 30),
               TextLable(text: "Email"),
-              inputemail(
+              InputEmail(
                 hintText: "Email",
                 prefixIcon: Icon(Icons.email),
                 suffixIcon: null,
@@ -54,7 +54,7 @@ class Login_Page extends StatelessWidget {
 
               TextLable(text: "Password"),
 
-              inputemail(
+              InputEmail(
                 hintText: "password",
                 prefixIcon: Icon(Icons.lock),
                 suffixIcon: Icon(Icons.remove_red_eye),

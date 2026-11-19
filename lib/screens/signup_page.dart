@@ -49,7 +49,7 @@ class SignupPage extends StatelessWidget {
 
               TextLable(text: "UserName"),
 
-              inputemail(
+              InputEmail(
                 hintText: "username",
                 prefixIcon: null,
                 suffixIcon: null,
@@ -57,7 +57,7 @@ class SignupPage extends StatelessWidget {
 
               TextLable(text: "Email"),
 
-              inputemail(
+              InputEmail(
                 hintText: "Email",
                 prefixIcon: Icon(Icons.email),
                 suffixIcon: null,
@@ -67,7 +67,7 @@ class SignupPage extends StatelessWidget {
 
               TextLable(text: "Password"),
 
-              inputemail(
+              InputEmail(
                 hintText: "password",
                 prefixIcon: Icon(Icons.lock),
                 suffixIcon: Icon(Icons.remove_red_eye),
@@ -121,7 +121,7 @@ class SignupPage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Login_Page()),
+                    MaterialPageRoute(builder: (context) => const LoginPage()),
                   );
                 },
                 child: Container(

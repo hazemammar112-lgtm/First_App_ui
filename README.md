@@ -1,5 +1,4 @@
-
-# First App UI 
+# First App UI
 
 A Flutter application showcasing my UI development skills using Flutter.
 
@@ -8,6 +7,15 @@ A Flutter application showcasing my UI development skills using Flutter.
 <p align="center">
   <img src="screenshots/Home_bage.jpeg" width="300" alt="Home Page" />
   <img src="screenshots/Login_page.jpeg" width="300" alt="Login Page" />
+</p>
+
+<p align="center">
+  <img src="screenshots/HOME.jpeg" width="300" alt="Home Screen" />
+  <img src="screenshots/SCREAN.jpeg" width="300" alt="Screen" />
+</p>
+
+<p align="center">
+  <img src="screenshots/Groceries.jpeg" width="300" alt="Groceries Section" />
 </p>
 
 ## 🛠 Built With
