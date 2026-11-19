@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/widgets/Category_Card.dart';
-import 'package:frist_app_ui/widgets/ProductCard.dart';
 import 'package:frist_app_ui/widgets/SectionHeader.dart';
 import 'package:frist_app_ui/widgets/catecory_list.dart';
 import 'package:frist_app_ui/widgets/product_list.dart';
