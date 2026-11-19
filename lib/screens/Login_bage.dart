@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/screens/Sign_Up.dart';
+import 'package:frist_app_ui/screens/Sigup_bage.dart';
 import 'package:frist_app_ui/widgets/Text_lable.dart';
 import 'package:frist_app_ui/widgets/input_email.dart';
 

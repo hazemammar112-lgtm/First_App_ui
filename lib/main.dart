@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frist_app_ui/screens/Home_page.dart';
 import 'package:frist_app_ui/screens/Login_bage.dart';
 
 void main(){
@@ -12,7 +13,8 @@ class Mu_App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home:Login_Page()
+      home:HomePage()
+      
     );
   }
 }
