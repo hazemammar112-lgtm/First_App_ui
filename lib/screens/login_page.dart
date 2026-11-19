@@ -43,8 +43,8 @@ class Login_Page extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 30),
-              Text_Lable(text: "Email"),
-              input_email(
+              TextLable(text: "Email"),
+              inputemail(
                 hintText: "Email",
                 prefixIcon: Icon(Icons.email),
                 suffixIcon: null,
@@ -52,9 +52,9 @@ class Login_Page extends StatelessWidget {
 
               SizedBox(height: 15),
 
-              Text_Lable(text: "Password"),
+              TextLable(text: "Password"),
 
-              input_email(
+              inputemail(
                 hintText: "password",
                 prefixIcon: Icon(Icons.lock),
                 suffixIcon: Icon(Icons.remove_red_eye),
@@ -71,7 +71,7 @@ class Login_Page extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Sign_Up()),
+                    MaterialPageRoute(builder: (context) => const SignupPage()),
                   );
                 },
                 child: Container(

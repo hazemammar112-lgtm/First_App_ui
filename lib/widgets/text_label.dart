@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Text_Lable extends StatelessWidget {
-  const Text_Lable({super.key, required this.text});
+class TextLable extends StatelessWidget {
+  const TextLable({super.key, required this.text});
   final String text;
 
   @override
