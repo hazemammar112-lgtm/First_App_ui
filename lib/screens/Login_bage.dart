@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:frist_app_ui/screens/Sign_Up.dart';
+import 'package:frist_app_ui/widgets/Text_lable.dart';
 import 'package:frist_app_ui/widgets/input_email.dart';
 
 class Login_Page extends StatelessWidget {
@@ -43,52 +43,21 @@ class Login_Page extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 30),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Email"),
-                  ),
-                ],
-
-
-
-
-
-
-
-
-
-              ),
+              Text_Lable(text: "Email"),
               input_email(
                 hintText: "Email",
                 prefixIcon: Icon(Icons.email),
-                suffixIcon:null
+                suffixIcon: null,
               ),
-
-
-
-
-
-
-
 
               SizedBox(height: 15),
 
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Password"),
-                  ),
-                ],
-              ),
+              Text_Lable(text: "Password"),
 
               input_email(
                 hintText: "password",
-                prefixIcon: Icon(Icons.password),
+                prefixIcon: Icon(Icons.lock),
                 suffixIcon: Icon(Icons.remove_red_eye),
-                
               ),
 
               Row(

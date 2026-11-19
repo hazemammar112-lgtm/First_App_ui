@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class input_email extends StatelessWidget {
   const input_email({super.key, required this.hintText, required this.prefixIcon, required this.suffixIcon});
-  final String hintText;
-  final Widget prefixIcon;
+  final String? hintText;
+  final Widget? prefixIcon;
   final Widget? suffixIcon;
 
   @override

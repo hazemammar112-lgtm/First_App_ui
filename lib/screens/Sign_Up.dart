@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frist_app_ui/screens/Login_bage.dart';
+import 'package:frist_app_ui/widgets/Text_lable.dart';
 import 'package:frist_app_ui/widgets/input_email.dart';
 
 class Sign_Up extends StatelessWidget {
@@ -16,6 +17,7 @@ class Sign_Up extends StatelessWidget {
 
               Center(child: Image.asset("assets/Group.png")),
               SizedBox(height: 60),
+
               Row(
                 children: [
                   Padding(
@@ -30,6 +32,7 @@ class Sign_Up extends StatelessWidget {
                   ),
                 ],
               ),
+
               Row(
                 children: [
                   Padding(
@@ -41,62 +44,34 @@ class Sign_Up extends StatelessWidget {
                   ),
                 ],
               ),
+
               SizedBox(height: 30),
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Username"),
-                  ),
-                ],
+
+              Text_Lable(text: "UserName"),
+
+              input_email(
+                hintText: "username",
+                prefixIcon: null,
+                suffixIcon: null,
               ),
 
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Username",
+              Text_Lable(text: "Email"),
 
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
-              ),
-
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Email"),
-                  ),
-                ],
-              ),
-
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Email",
-                  suffixIcon: Icon(Icons.check, color: Color(0xff53B175)),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              input_email(
+                hintText: "Email",
+                prefixIcon: Icon(Icons.email),
+                suffixIcon: null,
               ),
 
               SizedBox(height: 15),
 
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Password"),
-                  ),
-                ],
-              ),
+              Text_Lable(text: "Password"),
 
               input_email(
-               hintText:"password" ,
-               prefixIcon: Icon(Icons.password_outlined),
-               suffixIcon: Icon(Icons.lock)
-               ),
-
+                hintText: "password",
+                prefixIcon: Icon(Icons.lock),
+                suffixIcon: Icon(Icons.remove_red_eye),
+              ),
 
               Column(
                 children: [
