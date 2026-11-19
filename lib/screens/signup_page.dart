@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/screens/Sigup_bage.dart';
-import 'package:frist_app_ui/widgets/Text_lable.dart';
+import 'package:frist_app_ui/screens/login_page.dart';
+import 'package:frist_app_ui/widgets/text_label.dart';
 import 'package:frist_app_ui/widgets/input_email.dart';
 
-class Login_Page extends StatelessWidget {
-  const Login_Page({super.key});
+class Sign_Up extends StatelessWidget {
+  const Sign_Up({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,12 +17,13 @@ class Login_Page extends StatelessWidget {
 
               Center(child: Image.asset("assets/Group.png")),
               SizedBox(height: 60),
+
               Row(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 13.0, bottom: 10),
                     child: Text(
-                      "LOGIN",
+                      "SIGN UP",
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -31,19 +32,31 @@ class Login_Page extends StatelessWidget {
                   ),
                 ],
               ),
+
               Row(
                 children: [
                   Padding(
                     padding: const EdgeInsets.only(left: 13.0, bottom: 10),
                     child: Text(
-                      "Enter your email and password",
+                      "Enter your credentials to continue",
                       style: TextStyle(fontSize: 15, color: Colors.grey),
                     ),
                   ),
                 ],
               ),
+
               SizedBox(height: 30),
+
+              Text_Lable(text: "UserName"),
+
+              input_email(
+                hintText: "username",
+                prefixIcon: null,
+                suffixIcon: null,
+              ),
+
               Text_Lable(text: "Email"),
+
               input_email(
                 hintText: "Email",
                 prefixIcon: Icon(Icons.email),
@@ -60,10 +73,47 @@ class Login_Page extends StatelessWidget {
                 suffixIcon: Icon(Icons.remove_red_eye),
               ),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+              Column(
                 children: [
-                  TextButton(onPressed: () {}, child: Text("Forgot Password?")),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10, top: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "By continuing you agree to our ",
+                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                        ),
+                        Text(
+                          "Terms of Service",
+                          style: TextStyle(
+                            color: Color(0xff53B175),
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10, bottom: 15),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Text(
+                          "and ",
+                          style: TextStyle(color: Colors.grey, fontSize: 12),
+                        ),
+                        Text(
+                          "Privacy Policy.",
+                          style: TextStyle(
+                            color: Color(0xff53B175),
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
 
@@ -71,7 +121,7 @@ class Login_Page extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Sign_Up()),
+                    MaterialPageRoute(builder: (context) => const Login_Page()),
                   );
                 },
                 child: Container(
@@ -83,7 +133,7 @@ class Login_Page extends StatelessWidget {
                   width: 340,
                   child: Center(
                     child: Text(
-                      "Login",
+                      "Sign Up",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
                   ),
@@ -93,7 +143,7 @@ class Login_Page extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Don't have an account?"),
+                  Text("Already have on account?"),
                   TextButton(
                     onPressed: () {},
                     child: Text(

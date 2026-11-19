@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/widgets/SectionHeader.dart';
-import 'package:frist_app_ui/widgets/catecory_list.dart';
+import 'package:frist_app_ui/widgets/category_list.dart';
 import 'package:frist_app_ui/widgets/product_list.dart';
+import 'package:frist_app_ui/widgets/section_header.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/widgets/ProductCard.dart';
+import 'package:frist_app_ui/widgets/product_card.dart';
 
 class ProductList extends StatelessWidget {
   const ProductList({super.key, required this.image_in_List});

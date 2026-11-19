@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/widgets/Category_Card.dart';
+import 'package:frist_app_ui/widgets/category_card.dart';
 
 class catecorylist extends StatelessWidget {
   const catecorylist({
