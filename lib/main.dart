@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:frist_app_ui/screens/Home_page.dart';
-import 'package:frist_app_ui/screens/Login_bage.dart';
+// import 'package:frist_app_ui/screens/Login_bage.dart';
 
 void main(){
   runApp(const Mu_App());
@@ -14,7 +14,7 @@ class Mu_App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home:HomePage()
-      
+
     );
   }
 }
