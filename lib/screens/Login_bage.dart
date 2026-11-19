@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/Home_bage.dart';
+import 'package:frist_app_ui/screens/Sign_Up.dart';
+import 'package:frist_app_ui/widgets/input_email.dart';
 
 class Login_Page extends StatelessWidget {
   const Login_Page({super.key});
@@ -48,16 +50,27 @@ class Login_Page extends StatelessWidget {
                     child: Text("Email"),
                   ),
                 ],
+
+
+
+
+
+
+
+
+
               ),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Email",
-                  prefixIcon: Icon(Icons.email),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                ),
+              input_email(
+                hintText: "Email",
+                prefixIcon: Icon(Icons.lock),
               ),
+
+
+
+
+
+
+              
 
               SizedBox(height: 15),
 
@@ -94,7 +107,7 @@ class Login_Page extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const HomeBage()),
+                    MaterialPageRoute(builder: (context) => const Sign_Up()),
                   );
                 },
                 child: Container(

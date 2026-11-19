@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:frist_app_ui/Login_bage.dart';
+import 'package:frist_app_ui/screens/Login_bage.dart';
 
-class HomeBage extends StatelessWidget {
-  const HomeBage({super.key});
+class Sign_Up extends StatelessWidget {
+  const Sign_Up({super.key});
 
   @override
   Widget build(BuildContext context) {
